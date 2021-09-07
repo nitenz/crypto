@@ -3,7 +3,7 @@ import './news.styles.scss';
 
 const News = () => {
     return(
-        <div className="page-news">
+        <div className="page-news-content">
                 <div className="article">
                    <h2> Principais noticias </h2>
                    <div className="page-news">
