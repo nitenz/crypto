@@ -29,7 +29,7 @@ class AssetsList extends React.Component {
                 }else{
                     this.setState({assetsListPosition: this.state.assetsListPosition+10});
                 }
-                }, 125)
+                }, 100)
         }
 
         this.setState({windowWidth:windowWidth,assetsListWidth: this.assetsListWidth.current.offsetWidth,assetsListPosition: this.assetsListWidth.current.offsetWidth*-1}, teste);
@@ -41,7 +41,7 @@ class AssetsList extends React.Component {
             position: 'relative',
             display: 'inline-block',
             transform: `translate(${this.state.assetsListPosition}px, 0px)`,
-            transition: 'transform 1ms ease-in-out 25ms' 
+            transition: 'transform 100ms ease-in-out' 
         };
 
             return (
