@@ -16,7 +16,7 @@ class Chart extends React.Component {
     var aux = [];
 
     this.props.chartData.map( (chartItem) => {
-      const chartDataObj =  {
+      const dataChartTemplate =  {
         label: chartItem.label,
         fill: true,
         lineTension: 0.3,
@@ -38,14 +38,14 @@ class Chart extends React.Component {
         data: chartItem.data
       };
 
-      aux.push(chartDataObj);
+      aux.push(dataChartTemplate);
     });
 
-    let statusCopy = Object.assign({}, this.state);
-    statusCopy.dataLine.datasets = aux;
+    let stateCopy = Object.assign({}, this.state);
+    stateCopy.dataLine.datasets = aux;
 
 
-    this.setState({statusCopy});
+    this.setState({stateCopy});
   }
 
   render() {
