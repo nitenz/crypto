@@ -2,14 +2,18 @@
     display: inline-block;
     background-color: black;
     font-family: Roboto,sans-serif;
-    a {
-        color: #5f5cff;
+    div {
+        color: #1dff08;
         cursor: pointer;
         text-decoration: none;
+        &.down{
+            color:red;
+        }
         &.dist_tick {
             position: relative;
             min-width: 180px;
             white-space: nowrap;
+            
             &:before {
                 content: "";
                 width: 1px;
@@ -58,17 +62,23 @@
         display: flex;
         justify-content: space-between;
     }
-    .svg-inline--fa.fa-w-10 {
-        width: .625em;
-    }
-    .svg-inline--fa {
+    .svg-inline--fa{
         display: inline-block;
         font-size: inherit;
         height: 1em;
         overflow: visible;
         vertical-align: -.125em;
+        &.fa-caret-up{
+
+        }
+        &.fa-caret-down{
+            transform: rotate(180deg);
+            color: red;
+        }
+        &.fa-w-10 {
+            width: .625em;
+        }
     }
-    
     .has-text-weight-bold {
         font-weight: 700!important;
     }
@@ -80,6 +90,11 @@
     }
     .mt-1 {
         margin-top: .25rem!important;
+        &.has-text-success{
+            &.down{
+                 color: red;
+            }
+        }
     }
     span {
         font-style: inherit;

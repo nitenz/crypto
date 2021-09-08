@@ -17,11 +17,11 @@ class App extends React.Component {
     this.state = {
       page:'news',
       assetsList: [
-        {assetName: "DIA", price: "$364.12", priceVariation: "0.11% ( $0.51 )"},
-        {assetName: "ADA", price: "$314.12", priceVariation: "0.12% ( $0.52 )"},
-        {assetName: "BTC", price: "$324.12", priceVariation: "0.13% ( $0.53 )"},
-        {assetName: "MATIC", price: "$334.12", priceVariation: "0.14% ( $0.54 )"},
-        {assetName: "BOLD", price: "$344.12", priceVariation: "0.15% ( $0.55 )"}
+        {assetName: 'DIA', price: '$364.12', priceVariation: '0.11% ( $0.51 )',priceVariationSignal:'+'},
+        {assetName: 'ADA', price: '$314.12', priceVariation: '0.12% ( $0.52 )',priceVariationSignal:'+'},
+        {assetName: 'BTC', price: '$324.12', priceVariation: '0.13% ( $0.53 )',priceVariationSignal:'-'},
+        {assetName: 'MATIC', price: '$334.12', priceVariation: '0.14% ( $0.54 )',priceVariationSignal:'+'},
+        {assetName: 'BOLD', price: '$344.12', priceVariation: '0.15% ( $0.55 )',priceVariationSignal:'-'}
       ]
     };
   }
